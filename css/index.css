@@ -13,6 +13,7 @@ header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 0.8rem;
 }
 
@@ -26,6 +27,7 @@ header {
 nav ul {
   display: flex;
   gap: 2rem;
+  margin-top: 0.8rem;
 }
 
 nav ul li {
@@ -55,7 +57,12 @@ nav ul li:last-child {
   border-radius: 1rem;
   background-color: #e0f2f1;
 }
-
+nav ul li:last-child a:hover {
+  color: white;
+}
+nav ul li:last-child:hover {
+  background-color: #00796b;
+}
 /*CSS for body*/
 body {
   font-family: Tahoma, Verdana, sans-serif;
