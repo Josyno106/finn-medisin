@@ -7,7 +7,7 @@
   if (mysqli_num_rows($result) > 0) {
         while ($res = mysqli_fetch_array($result)) {
           
-          echo '<ul>';
+          echo '<ul class="results">';
           // echo $res['vare_name']. "<br/>";
           echo "<li> <a href='#'>".$res['vare_name']."</a></li>";
           echo '</ul>';

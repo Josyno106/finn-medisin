@@ -43,20 +43,22 @@
       <div class="form_placement_outer">
         <div class="form_placement_inner">
           <form action="" id="'searchForm">
-            <div class="form_q1">
-              <label for="vare">Hvilken vare trenger du?</label>
-              <input
-                id="vare"
-                type="text"
-                maxlength="50"
-                pattern="[a-zA-Z0-9\s]+"
-                placeholder="123456 eller varenavn"
-                autocomplete="off"
-                autofocus
-                required
-              />
+            <div class="resultater_forelder">
+              <div class="form_q1">
+                <label for="vare">Hvilken vare trenger du?</label>
+                <input
+                  id="vare"
+                  type="text"
+                  maxlength="50"
+                  pattern="[a-zA-Z0-9\s]+"
+                  placeholder="123456 eller varenavn"
+                  autocomplete="off"
+                  autofocus
+                  required
+                />
+              </div>
+              <div id="search_result"></div>
             </div>
-            <div id="search_result" style="background-color: gainsboro"></div>
             <div class="mellomrom_linje"></div>
             <div class="form_q2">
               <label for="adresse">Postnummer eller sted</label>

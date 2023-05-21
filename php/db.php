@@ -43,9 +43,6 @@ $conn = new mysqli($cleardb_server, $cleardb_username, $cleardb_password, $clear
     // Check connection
     if(!$conn){
         echo('Database connection error : ' .mysql_error());
-    } else{
-      echo('Connected Successfully: ' );
-    };
-
+    } 
 ?>
 
