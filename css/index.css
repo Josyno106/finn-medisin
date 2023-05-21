@@ -50,18 +50,15 @@ nav ul li a:hover {
 nav ul li:last-child a {
   color: #00796b;
   border-bottom: 1px solid transparent;
-}
-nav ul li:last-child {
   margin-left: 2rem;
-  padding: 0.2rem 0.8rem;
-  border-radius: 1rem;
+  padding: 0.4rem 1rem;
+  border-radius: 1.2rem;
   background-color: #e0f2f1;
 }
-nav ul li:last-child a:hover {
-  color: white;
-}
-nav ul li:last-child:hover {
+
+nav ul li:last-child:hover a {
   background-color: #00796b;
+  color: white;
 }
 /*CSS for body*/
 body {
