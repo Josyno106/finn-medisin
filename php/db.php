@@ -34,11 +34,11 @@ $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $cleardb_server = 'eu-cdbr-west-03.cleardb.net';
 $cleardb_username = 'bc60738b7850a1';
 $cleardb_password = '93349222';
-$cleardb_db = substr($cleardb_url["path"],1);
+$cleardb_db = 'heroku_129bc88e78eccca';
 $active_group = 'default';
 $query_builder = TRUE;
 // Connect to DB
-$conn = new mysqli($cleardb_server, $cleardb_username, $cleardb_password, 'heroku_129bc88e78eccca');
+$conn = new mysqli($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
 
     // Check connection
     if(!$conn){

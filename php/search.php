@@ -3,7 +3,7 @@
  
   if (isset($_POST['query'])) {
       $query = "SELECT * FROM vare WHERE vare_name LIKE '{$_POST['query']}%' LIMIT 10";
-      $result = mysqli_query($connection, $query);
+      $result = mysqli_query($conn, $query);
       if (mysqli_num_rows($result) > 0) {
         while ($res = mysqli_fetch_array($result)) {
           
