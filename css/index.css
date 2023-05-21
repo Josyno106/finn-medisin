@@ -25,7 +25,7 @@ header {
 
 nav ul {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 nav ul li {
@@ -35,7 +35,7 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #333333;
   font-weight: bold;
   border-bottom: 1px solid transparent;
