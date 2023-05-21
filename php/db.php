@@ -38,10 +38,10 @@ $cleardb_db = substr($cleardb_url["path"],1);
 $active_group = 'default';
 $query_builder = TRUE;
 // Connect to DB
-$connection = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+$conn = new mysqli($cleardb_server, $cleardb_username, $cleardb_password, 'heroku_129bc88e78eccca');
 
     // Check connection
-    if(!$connection){
+    if(!$conn){
         echo('Database connection error : ' .mysql_error());
     } else{
       echo('Connected Successfully: ' );
