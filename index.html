@@ -34,15 +34,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
-    <!-- <?php include 'php/db.php';?> -->
-    <!-- <?php include 'php/results.php';?> -->
     <?php include 'php/header.php';?>
 
     <!-- Seksjon 1 skjema spørreskjema -->
     <section class="section1">
       <div class="form_placement_outer">
         <div class="form_placement_inner">
-          <form action="" id="'searchForm">
+          <form id="searchForm">
             <div class="resultater_forelder">
               <div class="form_q1">
                 <label for="vare">Hvilken vare trenger du?</label>
@@ -57,17 +55,19 @@
                   required
                 />
               </div>
-              <div id="search_result"></div>
+              <div id="search_result">
+                <h3 id="results_title"></h3>
+              </div>
             </div>
             <div class="mellomrom_linje"></div>
             <div class="form_q2">
               <label for="adresse">Postnummer eller sted</label>
               <input
                 id="adresse"
-                type="text"
+                type="number"
                 maxlength="80"
                 pattern="[a-zA-Z0-9\s]+"
-                placeholder="3800 eller Bø i Telemark"
+                placeholder="3800 for eksempel"
               />
             </div>
             <p>eller velg fylke</p>

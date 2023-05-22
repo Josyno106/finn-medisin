@@ -1,3 +1,5 @@
 <?php
-    echo ('Hello World from server')
+
+    header("Location: ../index.html");
+
 ?>

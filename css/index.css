@@ -134,9 +134,17 @@ form p {
   align-items: center;
   flex-wrap: wrap;
   text-align: start;
-  padding-left: 10px;
+  padding-left: 20px;
+}
+.input-row {
+  /* background-color: red; */
+  display: flex;
+  gap: 0.7rem;
 }
 
+.input-row input {
+  margin-left: 0.5rem;
+}
 .search_placement {
   width: 100%;
 }
@@ -410,7 +418,7 @@ td {
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
   border-radius: 0.5rem;
   padding-top: 0.5rem;
-  height: 12rem;
+  /* height: rem; */
   overflow-y: scroll;
   position: absolute;
   top: 5.5rem;

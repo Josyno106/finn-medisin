@@ -13,10 +13,10 @@
         <nav>
           <ul>
             <li class="nav-placement">
-              <a href="" class="nav-horizontal">Hjem</a>
+              <a href="./index.php" class="nav-horizontal">Hjem</a>
             </li>
             <li class="nav-placement">
-              <a href="omoss.html" class="nav-horizontal">Om oss</a>
+              <a href="omoss.php" class="nav-horizontal">Om oss</a>
             </li>
             <li class="nav-placement">
               <a href="logginn.html" class="nav-horizontal">Logg inn</a>

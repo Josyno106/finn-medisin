@@ -185,25 +185,29 @@
             fill="#2f2e41"
           />
         </svg>
-        <form action="">
+        <form action="php/login.php" method="post">
           <div class="skjema_tittel">
             <h2>Velkommen tilbake!</h2>
             <p>Logg inn på Finn Medisin</p>
           </div>
           <div class="sec1_4_form_element2">
-            <label for="">Brukernavn</label>
+            <label for="">E-post</label>
             <input
               class="sec1_4_input"
-              type="text"
-              placeholder="Tast inn ditt brukernavn"
+              type="email"
+              placeholder="Tast inn ditt e-post"
+              name="email"
+              required
             />
           </div>
           <div class="sec1_4_form_element2">
             <label for="">Passord</label>
             <input
               class="sec1_4_input"
-              type="text"
+              type="password"
               placeholder="Tast inn ditt passord"
+              name="password"
+              required
             />
           </div>
           <div class="sec1_4_form_element3">
