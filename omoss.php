@@ -2,24 +2,24 @@
 
 require_once(__DIR__ . '/vendor/autoload.php');
 
-$credentials = SendinBlue\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', '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');
-$apiInstance = new SendinBlue\Client\Api\TransactionalEmailsApi(new GuzzleHttp\Client(),$credentials);
+// $credentials = SendinBlue\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', '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');
+// $apiInstance = new SendinBlue\Client\Api\TransactionalEmailsApi(new GuzzleHttp\Client(),$credentials);
 
-$sendSmtpEmail = new \SendinBlue\Client\Model\SendSmtpEmail([
-     'subject' => 'from the PHP SDK!',
-     'sender' => ['name' => 'Sendinblue', 'email' => 'contact@sendinblue.com'],
-     'replyTo' => ['name' => 'Sendinblue', 'email' => 'joshuanderi@gmail.com'],
-     'to' => [[ 'name' => 'Max Mustermann', 'email' => 'joshuanderi@gmail.com']],
-     'htmlContent' => '<html><body><h1>This is a transactional email {{params.bodyMessage}}</h1></body></html>',
-     'params' => ['bodyMessage' => 'made just for you!']
-]);
+// $sendSmtpEmail = new \SendinBlue\Client\Model\SendSmtpEmail([
+//      'subject' => 'from the PHP SDK!',
+//      'sender' => ['name' => 'Sendinblue', 'email' => 'contact@sendinblue.com'],
+//      'replyTo' => ['name' => 'Sendinblue', 'email' => 'joshuanderi@gmail.com'],
+//      'to' => [[ 'name' => 'Max Mustermann', 'email' => 'joshuanderi@gmail.com']],
+//      'htmlContent' => '<html><body><h1>This is a transactional email {{params.bodyMessage}}</h1></body></html>',
+//      'params' => ['bodyMessage' => 'made just for you!']
+// ]);
 
-try {
-    $result = $apiInstance->sendTransacEmail($sendSmtpEmail);
-    print_r($result);
-} catch (Exception $e) {
-    echo $e->getMessage(),PHP_EOL;
-}
+// try {
+//     $result = $apiInstance->sendTransacEmail($sendSmtpEmail);
+//     print_r($result);
+// } catch (Exception $e) {
+//     echo $e->getMessage(),PHP_EOL;
+// }
 
 ?>
 <!DOCTYPE html>
