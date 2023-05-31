@@ -24,6 +24,8 @@ section {
 
 .forelder {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: white;
   gap: 2rem;
   width: 50%;
@@ -77,10 +79,10 @@ form {
 .sec1_4_form_element3 input[type="submit"] {
   background-color: #00796b;
   outline: none;
-  border: 1px solid #00796b;
-  font-size: 1rem;
-  padding: 0.6rem 2.3rem;
-  border-radius: 1.4rem;
+  border: 2px solid #00796b;
+  font-size: 1.2rem;
+  padding: 0.8rem 2.3rem;
+  border-radius: 0.5rem;
   color: white;
   margin-top: 1rem;
   cursor: pointer;

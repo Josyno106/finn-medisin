@@ -1,5 +1,5 @@
 <?php
-  require_once "db.php";
+require_once "db.php";
 // Retrieve user input from a login form
 $email = $_POST['email'];
 $password = $_POST['password'];

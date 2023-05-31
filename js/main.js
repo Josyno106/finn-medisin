@@ -1,29 +1,35 @@
-// $(document).ready(function () {
-//   $("#vare").keyup(function () {
-//     var query = $(this).val();
-//     if (query != "") {
-//       $.ajax({
-//         url: "./php/search.php",
-//         method: "POST",
-//         data: {
-//           query: query,
-//         },
-//         success: function (data) {
-//           $("#search_result").html(data);
-//           $("#search_result").css("display", "block");
-//           $("#vare").focusout(function () {
-//             $("#search_result").css("display", "none");
-//           });
-//           $("#vare").focusin(function () {
-//             $("#search_result").css("display", "block");
-//           });
-//         },
-//       });
-//     } else {
-//       $("#search_result").css("display", "none");
-//     }
-//   });
-// });
+$(document).ready(function () {
+  $("#vare").keyup(function () {
+    var query = $(this).val();
+    if (query != "") {
+      $.ajax({
+        url: "./php/live_search.php",
+        method: "POST",
+        data: {
+          query: query,
+        },
+        success: function (data) {
+          $("#live_search").html(data);
+          $("#live_search").css("display", "block");
+          $("#vare").focusout(function () {
+            $("#live_search").on("click", "li", function () {
+              $("#vare").val($(this).text().trim());
+              localStorage.setItem("query", $(this).text().trim());
+              console.log($(this).text());
+              $("#live_search").css("display", "none");
+            });
+            // $("#live_search").css("display", "none");
+          });
+          $("#vare").focusin(function () {
+            $("#live_search").css("display", "block");
+          });
+        },
+      });
+    } else {
+      $("#live_search").css("display", "none");
+    }
+  });
+});
 
 $(document).ready(function () {
   //get the data if it's selected
@@ -62,13 +68,6 @@ $(document).ready(function () {
     var product = $("#vare").val().trim();
     var location = parseInt($("#adresse").val().trim());
 
-    // alert(product);
-    // alert(values);
-    // alert(location);
-
-    // Perform form data validation or any other processing
-    // ...
-
     //here, we check what kind of request to sent for processing
 
     if (values.length === 0) {
@@ -81,15 +80,17 @@ $(document).ready(function () {
           data: {
             product: product,
             location: location,
+            query: localStorage.getItem("query"),
           },
           success: function (data) {
             $("#search_result").html(data);
             $("#search_result").css("display", "block");
-            $("#vare").focusout(function () {
+
+            $("#search_result").on("click", "li", function () {
+              localStorage.setItem("product_string", $(this).text().trim());
+              window.location.href = "./site2.php";
+
               $("#search_result").css("display", "none");
-            });
-            $("#vare").focusin(function () {
-              $("#search_result").css("display", "block");
             });
           },
           error: function (xhr, status, error) {

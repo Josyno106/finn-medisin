@@ -431,7 +431,12 @@ td {
   text-align: left;
 }
 #search_result ul li {
+  padding: 0.3rem;
   margin: 0;
+  border-radius: 0.2rem;
+}
+#search_result ul li:hover {
+  background-color: #e0f2f1;
 }
 #search_result ul li a {
   text-decoration: none;
@@ -439,4 +444,43 @@ td {
 }
 #search_result ul li a:hover {
   color: #00796b;
+  font-weight: 600;
+}
+
+#live_search {
+  background-color: white;
+  position: absolute;
+  top: 5rem;
+  left: 0.6rem;
+  color: wheat;
+  width: 30.5rem;
+  border-radius: 0.3rem;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.3);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.5rem;
+  z-index: 1000;
+  display: none;
+}
+
+#live_search ul {
+  list-style: none;
+}
+
+#live_search ul li {
+  padding: 0.3rem;
+  margin: 0;
+  border-radius: 0.2rem;
+}
+#live_search ul li:hover {
+  background-color: #e0f2f1;
+}
+#live_search ul li a {
+  text-decoration: none;
+  color: #707070;
+}
+#live_search ul li a:hover {
+  color: #00796b;
+  font-weight: 600;
 }
