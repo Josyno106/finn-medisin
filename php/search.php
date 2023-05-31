@@ -30,7 +30,8 @@
       } else {
         echo "
         <div class='alert alert-danger mt-3 text-center' role='alert'>
-        Record not found
+          
+          Oops Varen ble ikke funnet
         </div>
         ";
       }
