@@ -25,6 +25,9 @@ section {
 .sec1_2_placement_inner_i {
   display: flex;
   gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .sec1_2box1 img {
@@ -32,7 +35,14 @@ section {
   width: 20rem;
   border-radius: 1rem;
 }
-
+.description p {
+  font-size: 1.2rem;
+}
+.description span {
+  font-size: 1.2rem;
+  color: #00796b;
+  font-weight: bolder;
+}
 .footer-style {
   background-color: aliceblue;
   display: flex;

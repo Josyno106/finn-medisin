@@ -13,8 +13,10 @@
         while ($res = mysqli_fetch_array($result)) {
           
         //  WHERE butikkvare.vare_id= $res['vare_id']
-          $shopQuery = "SELECT * FROM butikk INNER JOIN butikkvare on butikk.butikk_id=butikkvare.butikk_id WHERE butikkvare.vare_id = '".$res['vare_id']."'   LIMIT 10";
+          $shopQuery = "SELECT * FROM butikk INNER JOIN butikkvare on butikk.butikk_id=butikkvare.butikk_id WHERE butikkvare.vare_id = '".$res['vare_id']."' AND butikk.butikk_postkode = '".$_POST['location']."'  LIMIT 10";
           
+        // echo the query here 
+        // echo('<script>alert("'.$shopQuery.'")</script>');
 
           $shopsResult = mysqli_query($conn, $shopQuery);
           
@@ -43,3 +45,6 @@
 
 <!-- /AND butikk.butikk_postkode = '".$_POST['location']."' -->
 <!-- echo "<li> <a href='#'>".$res['vare_name']." ".'-'." ".$shopsRes['butikk_name']."  ".'-'."  ".$res['vare_styrke_enhet']."  ".'-'."  ".$res['vare_antall']."</a></li>"; -->
+
+
+<!-- SELECT * FROM butikk INNER JOIN butikkvare on butikk.butikk_id=butikkvare.butikk_id WHERE butikkvare.vare_id = 81251 AND butikk.butikk_postkode = 1091  LIMIT 10 -->

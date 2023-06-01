@@ -31,10 +31,10 @@
       href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-     <script>
+     <!-- <script>
       let check_product = !!localStorage.getItem("product_string");
       if(check_product===false) window.location.href = 'index.php'
-    </script>
+    </script> -->
   </head>
   <body>
     <section class="section1.2">
@@ -43,6 +43,7 @@
           <img src="Pictures/Medicine_icon-1.png" />
         </div>
         <div class="description">
+          <p id="product">varenavn:  <br />Butikknavn:  <br />styrke: <br />mengde: </p>
         </div>
       </div>
     </section>
@@ -58,9 +59,10 @@
     </footer>
     <script>
       let product = localStorage.getItem("product_string").split('-');
-       console.log(product)
+       console.log(product[0])
 
-        $('.description').html(`<p id="product">varenavn: ${product[0]} <br />Butikknavn: ${product[1]} <br />styrke: ${product[2].length>0 && !product[2]===null ? product[2] :'Utilgjengelig'}<br />mengde: ${product[3].length>0 && !product[3]===null ? product[3] :'Utilgjengelig'}</p>`)
+        // $('.description').html(`<p id="product">varenavn: ${product[0]} <br />Butikknavn: ${product[1]} <br />styrke: ${product[2].length>0 && !product[2]===null ? product[2] :'Utilgjengelig'}<br />mengde: ${product[3].length>0 && !product[3]===null ? product[3] :'Utilgjengelig'}</p>`)
+        $('.description').html(`<p id="product">${product[0]} er tilgjengelig på <br /></p><span> ${product[1]} </span>`)
     </script>
   </body>
 </html>
