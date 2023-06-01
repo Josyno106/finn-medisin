@@ -76,74 +76,27 @@ require_once(__DIR__ . '/vendor/autoload.php');
       </div>
     </section>
 
-    <!-- Seksjon 2 Grafer -->
-    <section class="section2_3">
-      <div class="sec2_3_placement_outer">
-        <div class="sec2_3_placement_inner">
-          <ul role="tablist">
-            <li role="presentation">
-              <a
-                href="#sec1_3_tab1"
-                id="link_sec1_3_tab1"
-                aria-controls="sec1_3_tab1"
-                aria-selected="true"
-                >Legemiddelmangel utvikling</a
-              >
-            </li>
-            <li role="presentation">
-              <a
-                href="#sec1_3_tab2"
-                id="link_sec1_3_tab2"
-                aria-controls="sec1_3_tab2"
-                aria-selected="false"
-                >Legemiddelmangel i Europa</a
-              >
-            </li>
-            <li role="presentation">
-              <a
-                href="#sec1_3_tab3"
-                id="link_sec1_3_tab3"
-                aria-controls="sec1_3_tab3"
-                aria-selected="false"
-                >Vårt bidrag</a
-              >
-            </li>
-          </ul>
-          <div class="sec2_3_tab_content_outer">
-            <!-- Tab1 -->
-            <div
-              class="sec2_3_tab_content_inner_o"
-              role="tabpanel"
-              aria-labelledby="link_sec1_3_tab1"
-            >
-              <div id="sec1_3_tab1" class="sec2_3_tab_content_inner_i">
-                <img src="Pictures/pic123.png" alt="" />
-              </div>
+   
+    
+    <section id="tabs-content">
+            <div class="tab">
+              <button class="tablinks" onclick="openCity(event, 'Legemiddelmangel_utvikling')">Legemiddelmangel utvikling</button>
+              <button class="tablinks" onclick="openCity(event, 'Legemiddelmangel_i_Europa')">Legemiddelmangel i Europa</button>
+              <button class="tablinks" onclick="openCity(event, 'Vårt_bidrag')">Vårt bidrag</button>
             </div>
-            <!-- Tab2 -->
-            <div
-              class="sec2_3_tab_content_inner_o"
-              role="tabpanel"
-              aria-labelledby="link_sec1_3_tab2"
-            >
-              <div id="sec1_3_tab2" class="sec2_3_tab_content_inner_i">
-                <img src="Pictures/pic231.png" alt="" />
-              </div>
+
+            <div id="Legemiddelmangel_utvikling" class="tabcontent">
+              <img src="Pictures/Medicine_icon-1.png" alt="" />
             </div>
-            <!-- Tab3 -->
-            <div
-              class="sec2_3_tab_content_inner_o"
-              role="tabpanel"
-              aria-labelledby="link_sec1_3_tab3"
-            >
-              <div id="sec1_3_tab3" class="sec2_3_tab_content_inner_i">
-                <img src="Pictures/pic312.png" alt="" />
-              </div>
+
+            <div id="Legemiddelmangel_i_Europa" class="tabcontent">
+              <img src="Pictures/Medicine_icon-1.png" alt="" />
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
+            <div id="Vårt_bidrag" class="tabcontent">
+              <img src="Pictures/Medicine_icon-1.png" alt="" />
+            </div>
+  </section>
 
     <footer class="footer-style">
       <div class="footer_placement">
@@ -154,5 +107,20 @@ require_once(__DIR__ . '/vendor/autoload.php');
       </div>
       <button>Til toppen</button>
     </footer>
+    <script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+</script>
   </body>
 </html>
