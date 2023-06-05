@@ -101,11 +101,36 @@ $(document).ready(function () {
           },
         });
       } else {
-        alert("You must enter postal code or a place to continue");
+        // Perform an AJAX request to submit the form data
+        $.ajax({
+          url: "./php/search.php", // Replace with the URL to handle the form submission
+          method: "POST",
+          data: {
+            product: product,
+            // location: location,
+            query: localStorage.getItem("query"),
+          },
+          success: function (data) {
+            $("#search_result").html(data);
+            $("#search_result").css("display", "block");
+
+            $("#search_result").on("click", "li", function () {
+              localStorage.setItem("product_string", "");
+              window.location.href = "./site2.php";
+
+              $("#search_result").css("display", "none");
+            });
+          },
+          error: function (xhr, status, error) {
+            // Handle the error response
+            console.error("Form submission failed.");
+            console.error("Error:", error);
+            // Perform any error handling or display error messages
+          },
+        });
+        // alert("You must enter postal code or a place to continue");
       }
     } else {
     }
   });
-
-  //get all the values from checkbox upon button click
 });
