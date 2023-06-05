@@ -64,12 +64,15 @@ require_once(__DIR__ . '/vendor/autoload.php');
           <div class="sec1_3_placement_inner_i">
             <h2>Om oss</h2>
             <p>
-              Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus
-              quis elementum. Phasellus sed efficitur dolor, et ultricies
-              sapien. Quisque fringilla sit amet dolor commodo efficitur.
-              Aliquam et sem odio. In ullamcorper nisi nunc, et molestie ipsum
-              iaculis sit amet.
+              Antall legemiddelsituasjoner har økt 23 ganger i perioden 2011-2022. Det koster
+              apotekbransjen nesten 50 millioner kroner i året å håndtere slike situasjoner i
+              kundemøtet. Det krever mye ressurser for både apotekansatte og pasienter å finne
+              løsninger. Grunnen til det er mye manuelt arbeid og ingen tjenester som kan levere
+              relevante svar i løpet av kort tid.
+
+              Målet med dette prosjektet er å kartlegge nåværende situasjon og komme med et
+              forslag til en webapplikasjon for mer effektiv håndtering av
+              legemiddelmangelsituasjoner.
             </p>
           </div>
         </div>
