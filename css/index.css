@@ -576,12 +576,18 @@ td {
     width: 100%;
   }
   header {
-    background-color: rebeccapurple;
+    /* background-color: rebeccapurple; */
     width: 100%;
   }
   .logo_nav_header {
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+  nav ul {
+    gap: 0.5rem;
+  }
+  nav ul li a {
+    font-size: 0.8rem;
   }
 }
