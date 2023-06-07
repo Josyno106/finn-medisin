@@ -92,7 +92,8 @@ section {
   section {
     width: 100%;
     flex-direction: column;
-    background-color: red;
+    /* background-color: red; */
+    padding-bottom: 5rem;
   }
   .sec1_2_placement_inner_i {
     flex-direction: column;
@@ -103,5 +104,8 @@ section {
     height: 12rem;
     width: 12rem;
     border-radius: 1rem;
+  }
+  .values-container {
+    border: none;
   }
 }
