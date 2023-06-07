@@ -512,7 +512,7 @@ td {
   }
   #search_result {
     /* background-color: #478ac9; */
-    width: 90%;
+    width: 98%;
     font-size: 0.8rem;
     max-height: 20rem;
     overflow-y: scroll;
@@ -523,7 +523,7 @@ td {
   }
   #live_search {
     /* background-color: #00796b; */
-    width: 90%;
+    width: 98%;
     font-size: 0.8rem;
     max-height: 20rem;
     overflow-y: scroll;
