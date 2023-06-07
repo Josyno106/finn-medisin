@@ -101,3 +101,24 @@ form {
 .sec1_4_form_element4 p a:hover {
   color: #00796b;
 }
+
+/* media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+  section {
+    align-items: start;
+  }
+  .forelder svg {
+    display: none;
+  }
+  .forelder {
+    /* background-color: red; */
+    /* justify-content: flex-start; */
+    width: 90%;
+    background-color: #fff;
+    padding: 2rem 0;
+    margin-top: 6rem;
+  }
+  form {
+    width: 70%;
+  }
+}

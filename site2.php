@@ -19,6 +19,7 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hjemmeside</title>
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
     <link rel="stylesheet" type="text/css" href="css/site2.css" />
 
     <link
@@ -38,6 +39,7 @@
     </script> -->
   </head>
   <body>
+    <?php include 'php/header.php';?>
 
     <section class="section1.2">
       <div class="sec1_2_placement_inner_i">

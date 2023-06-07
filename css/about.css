@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Poppins:wght@500&display=swap");
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
 }
 .sec1_3_placement_inner_i {
   display: flex;
@@ -16,6 +21,7 @@
   font-weight: 900;
   scale: 2;
   margin-bottom: 3rem;
+  color: #00796b;
 }
 .sec1_3_placement_inner_i p {
   width: 70%;
@@ -102,4 +108,30 @@
 .tabcontent img {
   width: 10rem;
   height: 10rem;
+}
+
+.footer-style {
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+  .sec1_3_placement_inner_i {
+    padding: 2rem 1rem;
+  }
+  .sec1_3_placement_inner_i p {
+    width: 90%;
+  }
+
+  .footer-style {
+    text-align: center;
+  }
 }

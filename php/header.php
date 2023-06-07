@@ -19,10 +19,10 @@
               <a href="omoss.php" class="nav-horizontal">Om oss</a>
             </li>
             <li class="nav-placement">
-              <a href="logginn.html" class="nav-horizontal">Logg inn</a>
+              <a href="logginn.php" class="nav-horizontal">Logg inn</a>
             </li>
              <li class="nav-placement">
-              <a href="logginn.html" class="nav-horizontal">Ny Konto</a>
+              <a href="logginn.php" class="nav-horizontal">Ny Konto</a>
             </li>
           </ul>
         </nav>

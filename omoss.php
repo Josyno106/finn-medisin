@@ -40,7 +40,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hjemmeside</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/about.css" />
     <link
       rel="icon"
@@ -101,14 +101,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
             </div>
   </section>
 
-    <footer class="footer-style">
+   <footer class="footer-style">
       <div class="footer_placement">
         <p>
           finnmedisin.no &copy; 2023<br />Nettsiden benytter
           <a href="">informasjonskapsler</a>
         </p>
       </div>
-      <button>Til toppen</button>
+      <!-- <button>Til toppen</button> -->
     </footer>
     <script>
         function openCity(evt, cityName) {
