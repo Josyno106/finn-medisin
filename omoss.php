@@ -93,11 +93,11 @@ require_once(__DIR__ . '/vendor/autoload.php');
             </div>
 
             <div id="Legemiddelmangel_i_Europa" class="tabcontent">
-              <img src="Pictures/img_5990.jpeg" alt="" />
+              <img src="Pictures/img_5991.jpeg" alt="" />
             </div>
 
             <div id="Vårt_bidrag" class="tabcontent">
-              <img src="Pictures/img_5990.jpeg" alt="" />
+              <img src="Pictures/img_5992.jpeg" alt="" />
             </div>
   </section>
 
