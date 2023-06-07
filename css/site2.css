@@ -86,3 +86,22 @@ section {
     border-radius: 1rem;
   }
 }
+
+/* media queries for mobile devices */
+@media only screen and (max-width: 600px) {
+  section {
+    width: 100%;
+    flex-direction: column;
+    background-color: red;
+  }
+  .sec1_2_placement_inner_i {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .sec1_2box1 img {
+    height: 12rem;
+    width: 12rem;
+    border-radius: 1rem;
+  }
+}
