@@ -535,7 +535,7 @@ td {
   .sec2_placement_inner {
     display: flex;
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     text-align: center;
     background-color: #00796b;
   }
