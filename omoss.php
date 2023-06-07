@@ -62,7 +62,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
       <div class="sec1_3_placement_outer">
         <div class="sec1_3_placement_inner_o">
           <div class="sec1_3_placement_inner_i">
-            <h2>Om oss</h2>
+            <!-- <h2>Om oss</h2> -->
             <p>
               Antall legemiddelsituasjoner har økt 23 ganger i perioden 2011-2022. Det koster
               apotekbransjen nesten 50 millioner kroner i året å håndtere slike situasjoner i
