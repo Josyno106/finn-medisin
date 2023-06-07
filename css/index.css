@@ -505,7 +505,7 @@ td {
 
   .form_placement_inner {
     position: relative;
-    width: 95%;
+    width: 90%;
     margin: 1rem 1rem;
     text-align: center;
     /* background-color: #707070; */
@@ -535,7 +535,7 @@ td {
   .sec2_placement_inner {
     display: flex;
     flex-direction: column;
-    width: 75%;
+    width: 90%;
     text-align: center;
     background-color: #00796b;
   }
