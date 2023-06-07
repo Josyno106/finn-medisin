@@ -551,4 +551,21 @@ td {
     flex-direction: column;
     gap: 0.5rem;
   }
+
+  .sec3_placement_outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .sec3_inner_grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .sec3box {
+    width: 90%;
+  }
 }
