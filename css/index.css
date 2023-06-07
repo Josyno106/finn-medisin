@@ -569,4 +569,10 @@ td {
   .sec3box {
     width: 90%;
   }
+  .footer_placement {
+    position: relative;
+    margin: 0 auto;
+    min-height: 50px;
+    width: 100%;
+  }
 }
