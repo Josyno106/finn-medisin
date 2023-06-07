@@ -528,6 +528,13 @@ td {
     max-height: 20rem;
     overflow-y: scroll;
   }
+  .search_button {
+    margin-top: 20px;
+    padding: 0.5rem;
+    width: 50%;
+    background-color: #fef9e6;
+    border-radius: 10px;
+  }
   .sec2_placement_outer {
     /* min-height: 200px; */
     width: 100vw;
