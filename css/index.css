@@ -515,6 +515,7 @@ td {
     width: 98%;
     font-size: 0.8rem;
     max-height: 20rem;
+    padding: 1rem;
     overflow-y: scroll;
   }
   #search_result h4 {
