@@ -575,4 +575,13 @@ td {
     min-height: 50px;
     width: 100%;
   }
+  header {
+    background-color: rebeccapurple;
+    width: 100%;
+  }
+  .logo_nav_header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
 }
