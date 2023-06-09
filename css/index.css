@@ -428,6 +428,8 @@ td {
   font-weight: 600;
 }
 
+
+
 /* media queries for mobile devices */
 @media only screen and (max-width: 600px) {
   body {
@@ -519,3 +521,5 @@ td {
     width: 100%;
   }
 }
+
+
